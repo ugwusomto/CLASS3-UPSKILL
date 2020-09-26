@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link rel="shortcut icon" href="quick-connect-icon-2.png">
+ <title>Tables in HTML</title>
+</head>
+<body>
+       <div class="container">
+          <h1>Working with HTML5 Tables</h1>
+          <h4>3 * 3 Table</h4>
+          <table border="1">
+                 <tr>
+                    <th>S/N</th>
+                    <th>Artist</th>
+                    <th>Age</th>
+                 </tr>
+                 <tr>
+                    <td>1</td>
+                    <td>Wizkid</td>
+                    <td>28 yrs</td>
+                 </tr>
+                 <tr>
+                    <td>2</td>
+                    <td>Davido</td>
+                    <td>30 yrs</td>
+                 </tr>
+          </table>
+           <hr>
+          <h4>4 * 4 Table</h4>
+          <table border="2">
+             <tr>
+               <th>S/N</th>
+               <th>Name</th>
+               <th>Best Food</th>
+               <th>Worst Food</th>
+             </tr>
+             <tr>
+                <td>1</td>
+                <td>Cardi B</td>
+                <td>Corn</td>
+                <td>Akpu</td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>Somto</td>
+                <td>Akpu</td>
+                <td>Okpa</td>
+             </tr>
+             <tr>
+               <td>3</td>
+               <td>Benz</td>
+               <td>Beans</td>
+               <td>Tea</td>
+             </tr>
+
+          </table>
+
+
+          <hr>
+          <h4>Column Spanning</h4>
+          <table border="2">
+             <tr>
+               <th>S/N</th>
+               <th>Name</th>
+               <th>Best Food</th>
+               <th>Worst Food</th>
+             </tr>
+             <tr>
+                <td>1</td>
+                <td>Cardi B</td>
+                <td>Corn</td>
+                <td>Akpu</td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>Somto</td>
+                <td colspan="2">Akpu</td>
+             
+             </tr>
+             <tr>
+               <td>3</td>
+               <td>Benz</td>
+               <td>Beans</td>
+               <td>Tea</td>
+             </tr>
+
+          </table>
+
+
+          <hr>
+          <h4>Row Spanning</h4>
+          <table border="2">
+           <thead>
+              <tr>
+               <th>S/N</th>
+               <th>Name</th>
+               <th>Best Food</th>
+               <th>Worst Food</th>
+             </tr> 
+           </thead>
+              <tbody>
+                            <tr>
+                <td>1</td>
+                <td>Cardi B</td>
+                <td>Corn</td>
+                <td rowspan="2" >Akpu</td>
+             </tr>
+             <tr>
+                <td>2</td>
+                <td>Somto</td>
+                <td>Akpu</td>
+
+             </tr>
+             <tr>
+               <td>3</td>
+               <td>Benz</td>
+               <td>Beans</td>
+               <td>Akpu</td>
+             </tr>
+              </tbody>
+
+
+          </table>
+
+
+
+
+       </div>
+</body>
+</html>

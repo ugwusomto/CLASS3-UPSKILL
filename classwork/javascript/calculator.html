@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Calculator</title>
+</head>
+<body>
+ 
+ <div class="container">
+     <div class="form-control">
+        <input id="number1" type="text" required placeholder="Enter first Number" >
+     </div>
+     <div class="form-control">
+      <input  id="number2" type="text" required
+       placeholder="Enter Second Number" >
+   </div>
+   <div class="form-control">
+    <input onclick="Addition()" type="submit" value="Add" >
+ </div>
+ </div>
+  <p id="display"></p>
+
+ <script>
+
+    function Addition(){
+         let input1Val = document.getElementById("number1").value;
+         let input2Val = document.getElementById("number2").value;
+          console.log(input1Val,input2Val);
+          console.log(isNaN(parseInt(input1Val)));
+
+          
+
+          if(isNaN(input1Val) || isNaN(input2Val))
+          {
+             alert("Bro enter a number")
+
+          }else if(input1Val === '' || input2Val=== '')
+          {
+              alert("Please dont submt empty input")
+
+          }else
+          {
+         let sum  = parseInt(input1Val) + parseInt(input2Val);
+         let display = document.getElementById("display");
+         display.innerHTML = "The answer is "+sum;
+          }
+
+
+
+        
+
+    }
+
+function Liked(){
+   alert("Liked");
+}
+
+let dateObj = new Date();
+let day = dateObj.getDay();
+console.log(dateObj)
+switch (day) {
+   case 5:
+      alert("friday");
+      break;
+
+   default:
+      alert("other days")
+      break;
+}
+
+let score = parseInt(prompt("Enter score"))
+switch (true) {
+   case (score <= 30):
+      alert("Boi you failed")
+      break;
+      case (score> 30 && score <= 50):
+      alert("Boi go jack")
+      break;
+   default:
+      alert("No too form")
+      break;
+}
+
+
+
+
+// for(let counter = 0 ; counter <= 100 ; counter++){
+//     document.write(counter+"<br>");
+// }
+
+let x = 0;
+while (x <= 100) {
+   console.log(x)
+   // x++;
+}
+
+
+
+
+
+
+
+
+
+
+    //    let input1 = document.getElementById("number1");
+    //    let para = document.getElementById("display");
+    //    para.innerHTML = "You";
+    //    para.onclick = () => alert();
+       
+    // // alert("nO")
+    // // let answer = window.confirm("Are you sure you want to delete this?");
+    // console.log(para);
+ </script>
+</body>
+</html>
