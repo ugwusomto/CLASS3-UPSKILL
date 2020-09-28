@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Arrays </title>
+</head>
+<body>
+ 
+
+   <script>
+      //   let name = "Benz";
+      //   let age = 45;
+      //   let complexion = "dark";
+      //   let occupation = "student";
+
+      //   using arrays to store data
+        let personsData = ["Benz",45,66,"dark","student"];
+        let name = personsData[0];
+        console.log(name)
+
+        let studentsData = [
+           ["Jane","Oko","Man"],
+           ["Okey","Max","Peter"],
+           ["Mylie","Epl","Ronaldo"],
+           ["Hair","John","James"]
+           ]
+       let newArray = [];
+
+       for(let x  = 0 ; x < studentsData.length ; x++){
+            
+            for(let y = 0 ; y < studentsData[x].length ; y++){
+                if(studentsData[x][y][0].toLowerCase() == "m"){
+                  newArray.push(studentsData[x][y]);
+                }
+            }
+
+       }
+
+       console.log(newArray)
+
+          document.write(studentsData[0].join(" "))
+         //  console.log(personsData)
+
+          let center = (personsData.length/2).toFixed()-1;
+
+         //  for(let counter = 0 ; counter < personsData.length ; counter++){
+         //     if(counter ==  center){
+         //         delete personsData[counter];
+         //     }
+         //  }
+
+         //  console.log(personsData)
+
+   </script>
+</body>
+</html>
